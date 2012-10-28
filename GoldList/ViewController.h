@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JSON/JSON.h"
+#import "globalVar.h"
 
-@interface ViewController : UIViewController
+
+NSArray *servers;
+int count = 0;
+NSArray *serverCell;
+NSArray *serverList;
+
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+
 
 @end

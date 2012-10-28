@@ -18,6 +18,13 @@
 		C166A9E8163BCC0B0063B0CA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C166A9E7163BCC0B0063B0CA /* Default-568h@2x.png */; };
 		C166A9EB163BCC0B0063B0CA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C166A9E9163BCC0B0063B0CA /* MainStoryboard.storyboard */; };
 		C166A9EE163BCC0B0063B0CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C166A9ED163BCC0B0063B0CA /* ViewController.m */; };
+		C166AA01163BCF720063B0CA /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C166A9F6163BCF720063B0CA /* NSObject+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C166AA02163BCF720063B0CA /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C166A9F8163BCF720063B0CA /* NSString+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C166AA03163BCF720063B0CA /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C166A9FA163BCF720063B0CA /* SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C166AA04163BCF720063B0CA /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C166A9FC163BCF720063B0CA /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C166AA05163BCF720063B0CA /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C166A9FE163BCF720063B0CA /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C166AA06163BCF720063B0CA /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C166AA00163BCF720063B0CA /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C18BCE60163D52250011ED6A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18BCE5F163D52250011ED6A /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +44,22 @@
 		C166A9EA163BCC0B0063B0CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		C166A9EC163BCC0B0063B0CA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C166A9ED163BCC0B0063B0CA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C166A9F4163BCF720063B0CA /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSON.h; path = GoldList/JSON/JSON.h; sourceTree = "<group>"; };
+		C166A9F5163BCF720063B0CA /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJSON.h"; path = "GoldList/JSON/NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		C166A9F6163BCF720063B0CA /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJSON.m"; path = "GoldList/JSON/NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		C166A9F7163BCF720063B0CA /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SBJSON.h"; path = "GoldList/JSON/NSString+SBJSON.h"; sourceTree = "<group>"; };
+		C166A9F8163BCF720063B0CA /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SBJSON.m"; path = "GoldList/JSON/NSString+SBJSON.m"; sourceTree = "<group>"; };
+		C166A9F9163BCF720063B0CA /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJSON.h; path = GoldList/JSON/SBJSON.h; sourceTree = "<group>"; };
+		C166A9FA163BCF720063B0CA /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJSON.m; path = GoldList/JSON/SBJSON.m; sourceTree = "<group>"; };
+		C166A9FB163BCF720063B0CA /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonBase.h; path = GoldList/JSON/SBJsonBase.h; sourceTree = "<group>"; };
+		C166A9FC163BCF720063B0CA /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonBase.m; path = GoldList/JSON/SBJsonBase.m; sourceTree = "<group>"; };
+		C166A9FD163BCF720063B0CA /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = GoldList/JSON/SBJsonParser.h; sourceTree = "<group>"; };
+		C166A9FE163BCF720063B0CA /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = GoldList/JSON/SBJsonParser.m; sourceTree = "<group>"; };
+		C166A9FF163BCF720063B0CA /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = GoldList/JSON/SBJsonWriter.h; sourceTree = "<group>"; };
+		C166AA00163BCF720063B0CA /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = GoldList/JSON/SBJsonWriter.m; sourceTree = "<group>"; };
+		C18BCE5E163D52250011ED6A /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		C18BCE5F163D52250011ED6A /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		C18BCE62163D53080011ED6A /* globalVar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = globalVar.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +106,15 @@
 		C166A9D7163BCC0B0063B0CA /* GoldList */ = {
 			isa = PBXGroup;
 			children = (
+				C18BCE64163D600E0011ED6A /* JSON */,
 				C166A9E0163BCC0B0063B0CA /* AppDelegate.h */,
 				C166A9E1163BCC0B0063B0CA /* AppDelegate.m */,
 				C166A9E9163BCC0B0063B0CA /* MainStoryboard.storyboard */,
 				C166A9EC163BCC0B0063B0CA /* ViewController.h */,
 				C166A9ED163BCC0B0063B0CA /* ViewController.m */,
+				C18BCE5E163D52250011ED6A /* DetailViewController.h */,
+				C18BCE5F163D52250011ED6A /* DetailViewController.m */,
+				C18BCE62163D53080011ED6A /* globalVar.h */,
 				C166A9D8163BCC0B0063B0CA /* Supporting Files */,
 			);
 			path = GoldList;
@@ -105,6 +132,27 @@
 				C166A9E7163BCC0B0063B0CA /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C18BCE64163D600E0011ED6A /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				C166A9F4163BCF720063B0CA /* JSON.h */,
+				C166A9F5163BCF720063B0CA /* NSObject+SBJSON.h */,
+				C166A9F6163BCF720063B0CA /* NSObject+SBJSON.m */,
+				C166A9F7163BCF720063B0CA /* NSString+SBJSON.h */,
+				C166A9F8163BCF720063B0CA /* NSString+SBJSON.m */,
+				C166A9F9163BCF720063B0CA /* SBJSON.h */,
+				C166A9FA163BCF720063B0CA /* SBJSON.m */,
+				C166A9FB163BCF720063B0CA /* SBJsonBase.h */,
+				C166A9FC163BCF720063B0CA /* SBJsonBase.m */,
+				C166A9FD163BCF720063B0CA /* SBJsonParser.h */,
+				C166A9FE163BCF720063B0CA /* SBJsonParser.m */,
+				C166A9FF163BCF720063B0CA /* SBJsonWriter.h */,
+				C166AA00163BCF720063B0CA /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +224,13 @@
 				C166A9DE163BCC0B0063B0CA /* main.m in Sources */,
 				C166A9E2163BCC0B0063B0CA /* AppDelegate.m in Sources */,
 				C166A9EE163BCC0B0063B0CA /* ViewController.m in Sources */,
+				C166AA01163BCF720063B0CA /* NSObject+SBJSON.m in Sources */,
+				C166AA02163BCF720063B0CA /* NSString+SBJSON.m in Sources */,
+				C166AA03163BCF720063B0CA /* SBJSON.m in Sources */,
+				C166AA04163BCF720063B0CA /* SBJsonBase.m in Sources */,
+				C166AA05163BCF720063B0CA /* SBJsonParser.m in Sources */,
+				C166AA06163BCF720063B0CA /* SBJsonWriter.m in Sources */,
+				C18BCE60163D52250011ED6A /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +347,7 @@
 				C166A9F3163BCC0B0063B0CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
