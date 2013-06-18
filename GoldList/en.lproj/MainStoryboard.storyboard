@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="dZ2-XV-7hX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="4457.6" systemVersion="13A476u" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="dZ2-XV-7hX">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <development version="4600" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.6"/>
     </dependencies>
     <scenes>
         <!--Main-->
@@ -12,8 +14,10 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Cck-qp-jVB">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Cck-qp-jVB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <sections/>
                                 <connections>
                                     <outlet property="dataSource" destination="2" id="PIu-r7-ecX"/>
                                     <outlet property="delegate" destination="2" id="HPD-Je-AlU"/>
@@ -28,6 +32,7 @@
                             <constraint firstItem="Cck-qp-jVB" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="LGZ-LR-KvT"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="GoldList" id="9JU-fO-5v6"/>
                     <connections>
                         <segue destination="3ud-aZ-xKD" kind="push" identifier="goDetail" id="7SR-1Z-1UB"/>
@@ -46,11 +51,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Server Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0k-if-sgf">
+                                <rect key="frame" x="20" y="20" width="141" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4U2-7d-fNC">
+                                <rect key="frame" x="20" y="48" width="280" height="101"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="101" id="yhC-PD-XM0"/>
@@ -61,11 +68,13 @@
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Game Mode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHf-gU-lgs">
+                                <rect key="frame" x="20" y="163" width="95" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4O-cL-ugm">
+                                <rect key="frame" x="30" y="191" width="280" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="23H-zU-IQV"/>
                                     <constraint firstAttribute="width" constant="280" id="Ooo-Hi-alF"/>
@@ -75,11 +84,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Connection Information" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sea-ky-pXX">
+                                <rect key="frame" x="20" y="232" width="179" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9R4-HI-qa7">
+                                <rect key="frame" x="30" y="260" width="211" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="211" id="7UA-Qg-KKm"/>
                                     <constraint firstAttribute="height" constant="21" id="yzz-xF-glT"/>
@@ -89,6 +100,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="GOLD" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="310" translatesAutoresizingMaskIntoConstraints="NO" id="cxS-GC-sGC">
+                                <rect key="frame" x="5" y="344" width="310" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="122-TR-KAJ"/>
                                     <constraint firstAttribute="width" constant="310" id="cWb-jt-6Hg"/>
@@ -98,11 +110,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Players" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dH5-tt-wOR">
+                                <rect key="frame" x="20" y="289" width="56" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWP-KG-aVa">
+                                <rect key="frame" x="30" y="315" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="leC-A4-EEK"/>
                                     <constraint firstAttribute="height" constant="21" id="zSC-mX-CSJ"/>
@@ -135,14 +149,19 @@
                             <constraint firstItem="O4O-cL-ugm" firstAttribute="leading" secondItem="dkQ-F8-46S" secondAttribute="leading" constant="30" id="vxv-0f-JWI"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="8sc-75-ulh">
                         <barButtonItem key="backBarButtonItem" title="Back" id="ZQB-EP-8jJ"/>
                     </navigationItem>
                     <connections>
                         <outlet property="connection" destination="9R4-HI-qa7" id="n2G-OV-U2o"/>
+                        <outlet property="connectionLabel" destination="Sea-ky-pXX" id="Sbb-MV-8yF"/>
                         <outlet property="description" destination="4U2-7d-fNC" id="NlW-ry-naO"/>
+                        <outlet property="descriptionLabel" destination="Q0k-if-sgf" id="LJF-m5-J2j"/>
                         <outlet property="gold" destination="cxS-GC-sGC" id="WXc-cc-Dfl"/>
                         <outlet property="mode" destination="O4O-cL-ugm" id="1xU-ZW-1RG"/>
+                        <outlet property="modeLabel" destination="hHf-gU-lgs" id="E3t-Tg-yxv"/>
+                        <outlet property="playerLabel" destination="dH5-tt-wOR" id="p8u-cd-kdt"/>
                         <outlet property="players" destination="YWP-KG-aVa" id="Bi3-Le-3L0"/>
                     </connections>
                 </viewController>
@@ -154,7 +173,8 @@
         <scene sceneID="BTc-Sj-dst">
             <objects>
                 <navigationController definesPresentationContext="YES" modalTransitionStyle="partialCurl" id="dZ2-XV-7hX" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ik6-8G-fsQ">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="ik6-8G-fsQ">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -166,24 +186,6 @@
             <point key="canvasLocation" x="-427" y="51"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="connection" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="description" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="gold" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="mode" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="players" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
